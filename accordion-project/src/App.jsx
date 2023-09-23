@@ -1,5 +1,8 @@
+import Accordion from "./components/Accordion";
+import faqs from "./data";
+
 const App = () => {
-  return "hello";
+  return <Accordion faqs={faqs} />;
 };
 
 export default App;
