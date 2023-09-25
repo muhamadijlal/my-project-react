@@ -1,11 +1,12 @@
+/* eslint-disable react/prop-types */
 import Button from "../Button";
 import InputForm from "../InputForm";
 import SelectForm from "./SelectForm";
 
-const FormBill = () => {
+const FormBill = ({ bill }) => {
   return (
     <form className="form-split-bill">
-      <h2>Jhon Doe</h2>
+      <h2>Split a Bill with {bill.name}</h2>
       <InputForm isDisabled={false}>
         <span>💰</span>
         Bill value
@@ -16,9 +17,9 @@ const FormBill = () => {
       </InputForm>
       <InputForm isDisabled={true}>
         <span>🤵</span>
-        JhonDoe expense
+        {bill.name} expense
       </InputForm>
-      <SelectForm>
+      <SelectForm friend={bill}>
         <span>🤑</span>
         Who is paying the bill
       </SelectForm>

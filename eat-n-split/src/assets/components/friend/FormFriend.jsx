@@ -4,7 +4,7 @@ import Button from "../Button";
 import InputForm from "../InputForm";
 import { useState } from "react";
 
-const AddFriend = ({ friends, onNewFriends }) => {
+const AddFriend = ({ friends, onNewFriends, setBill, bill }) => {
   const [showAddFriend, setShowAddFriend] = useState(false);
   const [name, setName] = useState("");
   const [imageURL, setImageURL] = useState("https://i.pravatar.cc/48");
@@ -40,7 +40,14 @@ const AddFriend = ({ friends, onNewFriends }) => {
     <div className="sidebar">
       <ul>
         {friends.map((friend) => {
-          return <ListFriend key={friend.id} friend={friend} />;
+          return (
+            <ListFriend
+              key={friend.id}
+              friend={friend}
+              bill={bill}
+              setBill={setBill}
+            />
+          );
         })}
       </ul>
 

@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import Button from "../Button";
 
-const ListFriends = ({ friend }) => {
+const ListFriends = ({ friend, setBill, bill }) => {
   return (
-    <li key={friend.key}>
+    <li key={friend.id}>
       <img src={friend.image} alt={friend.name} />
       <h3>{friend.name}</h3>
       {friend.balance < 0 && (
@@ -17,7 +17,13 @@ const ListFriends = ({ friend }) => {
         </p>
       )}
       {friend.balance === 0 && <p>You and {friend.name} are even</p>}
-      <Button>Select</Button>
+      <Button
+        onClick={() =>
+          bill?.id !== friend?.id ? setBill(friend) : setBill(null)
+        }
+      >
+        {bill?.id === friend?.id ? "Close" : "Select"}
+      </Button>
     </li>
   );
 };
