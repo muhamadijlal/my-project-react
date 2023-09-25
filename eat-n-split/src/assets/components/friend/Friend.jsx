@@ -1,11 +1,14 @@
 /* eslint-disable react/prop-types */
 import Button from "../Button";
 
-const ListFriends = ({ friend, setBill, bill }) => {
+const Friend = ({ friend, selectedFriend, onSelection }) => {
+  const selected = selectedFriend?.id === friend.id;
+
   return (
-    <li key={friend.id}>
+    <li className={selected ? "active" : ""}>
       <img src={friend.image} alt={friend.name} />
       <h3>{friend.name}</h3>
+
       {friend.balance < 0 && (
         <p className="red">
           You owe {friend.name} ${Math.abs(friend.balance)}
@@ -17,15 +20,12 @@ const ListFriends = ({ friend, setBill, bill }) => {
         </p>
       )}
       {friend.balance === 0 && <p>You and {friend.name} are even</p>}
-      <Button
-        onClick={() =>
-          bill?.id !== friend?.id ? setBill(friend) : setBill(null)
-        }
-      >
-        {bill?.id === friend?.id ? "Close" : "Select"}
+
+      <Button onClick={() => onSelection(friend)}>
+        {selected ? "Close" : "Open"}
       </Button>
     </li>
   );
 };
 
-export default ListFriends;
+export default Friend;
