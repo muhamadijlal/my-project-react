@@ -1,1 +1,1 @@
-# Several project of my journet learning react
+# Several project of my journey learning react
