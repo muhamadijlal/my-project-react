@@ -1,7 +1,15 @@
-import { useState } from "react";
+import { useRef } from "react";
+import { useKey } from "../../customHooks/useKey";
 
-const SearchInput = () => {
-  const [query, setQuery] = useState("");
+const SearchInput = ({ query, setQuery }) => {
+  const inputEl = useRef(null);
+
+  useKey("Enter", function () {
+    if (document.activeElement === inputEl.current) return;
+    inputEl.current.focus();
+    setQuery("");
+  });
+
   return (
     <input
       className="search"
@@ -9,6 +17,7 @@ const SearchInput = () => {
       placeholder="Search movies..."
       value={query}
       onChange={(e) => setQuery(e.target.value)}
+      ref={inputEl}
     />
   );
 };
