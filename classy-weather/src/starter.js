@@ -55,3 +55,5 @@ async function getWeather(location) {
     console.err(err);
   }
 }
+
+export { convertToFlag, getWeatherIcon, formatDay, getWeather };
