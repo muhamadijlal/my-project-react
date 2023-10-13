@@ -1,0 +1,148 @@
+{
+  "cities": [
+    {
+      "cityName": "Berlin",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2027-02-12T09:24:11.863Z",
+      "notes": "Amazing 😃",
+      "position": {
+        "lat": 52.53586782505711,
+        "lng": 13.376933665713324
+      },
+      "id": 98443197
+    },
+    {
+      "cityName": "Stile",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2023-10-11T03:05:16.497Z",
+      "notes": "",
+      "position": {
+        "lat": "34.34343606848294",
+        "lng": "5.954589843750001"
+      },
+      "id": 98443198
+    },
+    {
+      "cityName": "Dramaga",
+      "country": "Indonesia",
+      "emoji": "🇮🇩",
+      "date": "2023-10-11T03:06:06.600Z",
+      "notes": "test",
+      "position": {
+        "lat": "-6.582155249631325",
+        "lng": "106.73503160476686"
+      },
+      "id": 98443199
+    },
+    {
+      "cityName": "Gua Musang",
+      "country": "Malaysia",
+      "emoji": "🇲🇾",
+      "date": "2023-10-11T03:06:14.377Z",
+      "notes": "test123",
+      "position": {
+        "lat": "4.872047700241915",
+        "lng": "101.86523437500001"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "West Karawang",
+      "country": "Indonesia",
+      "emoji": "🇮🇩",
+      "date": "2023-10-13T06:59:18.909Z",
+      "notes": "",
+      "position": {
+        "lat": "-6.302928464535865",
+        "lng": "107.30398178100587"
+      },
+      "id": 98443201
+    },
+    {
+      "cityName": "Jatisari",
+      "country": "Indonesia",
+      "emoji": "🇮🇩",
+      "date": "2023-10-13T06:59:59.193Z",
+      "notes": "",
+      "position": {
+        "lat": "-6.3342369750042105",
+        "lng": "107.50920295715333"
+      },
+      "id": 98443202
+    },
+    {
+      "cityName": "Jatisari",
+      "country": "Indonesia",
+      "emoji": "🇮🇩",
+      "date": "2023-10-13T07:00:08.517Z",
+      "notes": "",
+      "position": {
+        "lat": "-6.334322281706999",
+        "lng": "107.52611160278322"
+      },
+      "id": 98443203
+    },
+    {
+      "cityName": "Telukjambe Timur",
+      "country": "Indonesia",
+      "emoji": "🇮🇩",
+      "date": "2023-10-13T07:01:23.182Z",
+      "notes": "",
+      "position": {
+        "lat": "-6.309838680093361",
+        "lng": "107.29660034179689"
+      },
+      "id": 98443204
+    },
+    {
+      "cityName": "Kelurahan Karawang Wetan",
+      "country": "Indonesia",
+      "emoji": "🇮🇩",
+      "date": "2023-10-13T07:02:58.783Z",
+      "notes": "",
+      "position": {
+        "lat": "-6.309838680093361",
+        "lng": "107.32681274414064"
+      },
+      "id": 98443205
+    },
+    {
+      "cityName": "Tegalwaru",
+      "country": "Indonesia",
+      "emoji": "🇮🇩",
+      "date": "2023-10-13T07:03:03.333Z",
+      "notes": "",
+      "position": {
+        "lat": "-6.655059391963732",
+        "lng": "107.32131958007814"
+      },
+      "id": 98443206
+    },
+    {
+      "cityName": "Eilenburg",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2023-10-13T09:17:24.307Z",
+      "notes": "",
+      "position": {
+        "lat": "51.45400691005982",
+        "lng": "12.611243710787916"
+      },
+      "id": 98443207
+    },
+    {
+      "cityName": "Solling",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2023-10-13T09:17:59.381Z",
+      "notes": "",
+      "position": {
+        "lat": "51.68617954855624",
+        "lng": "9.447686217170508"
+      },
+      "id": 98443208
+    }
+  ]
+}
