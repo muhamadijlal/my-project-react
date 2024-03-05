@@ -19,6 +19,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="detail/:name" element={<DetailWork />} />
           <Route path="works" element={<Works />} />
+          <Route path="*" element={<Navigate to="/home" replace />} />
         </Route>
       </Routes>
     </BrowserRouter>
